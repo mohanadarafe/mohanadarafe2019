@@ -47,6 +47,7 @@
     /*-------------------------------*/
     /*  Navigation Menu */ }
     .mh-xs-mobile-nav .nav-btn .navbar-toggler.active {
+      z-index: 1020;
       }
     .mh-xs-mobile-nav .navbar-nav {
       padding-top: 50px; }
@@ -276,7 +277,12 @@
     line-height: 24px; }
 
   .mh-nav {
-    padding: 0; }
+    padding: 10px;
+  }
+
+  .popupMenu {
+    background-color: white;
+  }
 
   .mh-professional-skills {
     padding-left: 0; }
