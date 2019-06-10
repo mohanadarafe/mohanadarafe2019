@@ -306,6 +306,10 @@
     padding-top: 50px;
     padding-right: 20px; } }
 @media only screen and (max-width: 768px) {
+
+  .aboutAlign {
+    width: 80%;
+  }
   .mh-blog .mh-blog-item {
     text-align: center; }
 
