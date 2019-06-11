@@ -2696,4 +2696,9 @@ BLOG Pagination
   padding-left: 80px; width: 65%
 }
 
+.contactMe:hover {
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
 /*# sourceMappingURL=styles.css.map */
