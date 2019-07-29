@@ -149,8 +149,8 @@
                             and customization. Also I am good at</p>
                         <div class="mh-about-tag wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
                             <ul>
-                                <li><span>java</span></li>
                                 <li><span>angular</span></li>
+                                <li><span>java</span></li>
                                 <li><span>mysql</span></li>
                                 <li><span>php</span></li>
                             </ul>
@@ -267,10 +267,10 @@
                                     <div class="mh-eduyear">May 2019 - Present</div>
                                     <span style="font-weight:bold;">Responsabilities:</span>
                                     <ol style="list-style-type:circle;">
-                                        <li>Prepare time estimate for new features</li>
-                                        <li>Develop new features</li>
-                                        <li>Fix bugs</li>
-                                        <li>Participate in code and design reviews</li>
+                                        <li>3 month internship working primarily with Angular 8</li>
+                                        <li>UI implementation using Typescript & RxJS</li>
+                                        <li>Implement new features & participate in design review</li>
+                                        <li>Work around an Agile-based methodology using Atlassian tools</li>
                                     </ol>
                                 </div>
                                 <!-- Work Institutes-->
@@ -577,36 +577,31 @@
                     <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
                         <h2>Contact Me</h2>
                         <p>Team work makes the dream work! Feel free to contact me for any business enquiries or quotes.</p>
-                    </div>
-                
-                    <center>
-                        <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
-                            <form id="contactForm" class="single-form quate-form wow fadeInUp" data-toggle="validator">
+                        
+                            <form id="contactForm" class="single-form quate-form wow fadeInUp" data-toggle="validator" onsubmit="validateEmail()" action="assets/email/contact.php" method="post">
                                 <div id="msgSubmit" class="h3 text-center hidden"></div>
                                 <div class="row">
-                                    <div class="col-md-6 col-sm-12">
+                                    <!-- Name -->
+                                    <div class="col-sm-12">
                                         <input name="name" class="contact-name form-control" id="name" type="text"
-                                            placeholder="First Name" required>
+                                            placeholder="Subject" required>
                                     </div>
                                     <!-- Honey Pot -->
-                                    <div class="col-md-6 col-sm-12">
-                                        <input name="name" class="contact-name form-control" id="name" type="text"
+                                    <div class="col-sm-12">
+                                        <input name="honey_name" class="contact-name form-control" id="name" type="text"
                                             placeholder="First Name" style="display: none;">
                                     </div>
-                                    <div class="col-md-6 col-sm-12">
-                                        <input name="name" class="contact-email form-control" id="L_name" type="text"
-                                            placeholder="Last Name" required>
-                                    </div>
+                                    <!-- Email -->
                                     <div class="col-sm-12">
-                                        <input name="name" class="contact-subject form-control" id="email" type="email"
+                                        <input name="email" class="contact-subject form-control" id="email" type="email"
                                             placeholder="Your Email" required>
                                     </div>
+                                    <!-- Message -->
                                     <div class="col-sm-12">
-                                        <textarea class="contact-message" id="message" rows="6" placeholder="Your Message"
+                                        <textarea 
+                                        name="message" class="contact-message" id="message" rows="6" placeholder="Your Message"
                                             required></textarea>
                                     </div>
-                                    <!-- Math Question -->
-
                                     <!-- Subject Button -->
                                     <div class="btn-form col-sm-12">
                                         <button type="submit" class="btn btn-fill btn-block" id="form-submit">Send
@@ -614,8 +609,7 @@
                                     </div>
                                 </div>
                             </form>
-                        </div>
-                    </center>
+                   
                     <div class="col-sm-12 mh-copyright wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
                         <div class="row">
                             <div class="col-sm-6">
@@ -667,6 +661,8 @@
     <!-- Fancybox js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
+    <!-- Email validation -->
+    <script src="assets/email/validate.js"></script>
 
 </body>
 
